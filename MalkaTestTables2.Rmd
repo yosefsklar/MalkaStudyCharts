@@ -1,0 +1,23 @@
+---
+output: pdf_document
+classoption: landscape
+geometry: margin=1cm
+---
+```{r setup, include=FALSE}
+library(knitr)
+library(papaja)
+library(kableExtra)
+knitr::opts_chunk$set(echo = TRUE)
+
+```
+
+```{r, echo=FALSE, warning = FALSE}
+read_chunk('branchingstudy1script.R')
+```
+```{r include=FALSE}
+knitr::opts_chunk$set(comment = NA)
+```
+```{r variablesXY, echo=FALSE, message = FALSE, results='asis'}
+```
+
+
